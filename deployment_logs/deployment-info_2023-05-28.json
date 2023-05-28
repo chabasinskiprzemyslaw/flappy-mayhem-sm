@@ -1,0 +1,1005 @@
+{
+  "network": "mantle",
+  "contract": {
+    "address": "0x16196d9e0F46E726F446Df6B926907B8DCc8726E",
+    "signerAddress": "0x5E4E7f4D98eC366FbAFAaFAa533939b0b0e3f8Aa",
+    "abi": {
+      "fragments": [
+        {
+          "name": null,
+          "type": "constructor",
+          "inputs": [
+            {
+              "name": "_token",
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            },
+            {
+              "name": "_owner",
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            },
+            {
+              "name": "_bonus",
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "gas": null,
+          "_isFragment": true
+        },
+        {
+          "name": "RewardSend",
+          "anonymous": false,
+          "inputs": [
+            {
+              "name": "_to",
+              "type": "address",
+              "indexed": true,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            },
+            {
+              "name": "_amount",
+              "type": "uint256",
+              "indexed": false,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "type": "event",
+          "_isFragment": true
+        },
+        {
+          "type": "function",
+          "name": "balance",
+          "constant": true,
+          "inputs": [],
+          "outputs": [
+            {
+              "name": null,
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "gas": null,
+          "_isFragment": true
+        },
+        {
+          "type": "function",
+          "name": "bonus",
+          "constant": true,
+          "inputs": [],
+          "outputs": [
+            {
+              "name": null,
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "gas": null,
+          "_isFragment": true
+        },
+        {
+          "type": "function",
+          "name": "calcReward",
+          "constant": true,
+          "inputs": [
+            {
+              "name": "_score",
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            },
+            {
+              "name": "_bonus",
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "outputs": [
+            {
+              "name": null,
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "pure",
+          "gas": null,
+          "_isFragment": true
+        },
+        {
+          "type": "function",
+          "name": "deposit",
+          "constant": false,
+          "inputs": [],
+          "outputs": [],
+          "payable": true,
+          "stateMutability": "payable",
+          "gas": null,
+          "_isFragment": true
+        },
+        {
+          "type": "function",
+          "name": "getBestScore",
+          "constant": true,
+          "inputs": [
+            {
+              "name": "_user",
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            }
+          ],
+          "outputs": [
+            {
+              "name": null,
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "gas": null,
+          "_isFragment": true
+        },
+        {
+          "type": "function",
+          "name": "getLastScore",
+          "constant": true,
+          "inputs": [
+            {
+              "name": "_user",
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            }
+          ],
+          "outputs": [
+            {
+              "name": null,
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "gas": null,
+          "_isFragment": true
+        },
+        {
+          "type": "function",
+          "name": "getTokenBalance",
+          "constant": true,
+          "inputs": [],
+          "outputs": [
+            {
+              "name": null,
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "gas": null,
+          "_isFragment": true
+        },
+        {
+          "type": "function",
+          "name": "getTotalScore",
+          "constant": true,
+          "inputs": [
+            {
+              "name": "_user",
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            }
+          ],
+          "outputs": [
+            {
+              "name": null,
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "gas": null,
+          "_isFragment": true
+        },
+        {
+          "type": "function",
+          "name": "owner",
+          "constant": true,
+          "inputs": [],
+          "outputs": [
+            {
+              "name": null,
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "gas": null,
+          "_isFragment": true
+        },
+        {
+          "type": "function",
+          "name": "setBonus",
+          "constant": false,
+          "inputs": [
+            {
+              "name": "_bonus",
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "gas": null,
+          "_isFragment": true
+        },
+        {
+          "type": "function",
+          "name": "setOwner",
+          "constant": false,
+          "inputs": [
+            {
+              "name": "_owner",
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            }
+          ],
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "gas": null,
+          "_isFragment": true
+        },
+        {
+          "type": "function",
+          "name": "setToken",
+          "constant": false,
+          "inputs": [
+            {
+              "name": "_token",
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            }
+          ],
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "gas": null,
+          "_isFragment": true
+        },
+        {
+          "type": "function",
+          "name": "token",
+          "constant": true,
+          "inputs": [],
+          "outputs": [
+            {
+              "name": null,
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "gas": null,
+          "_isFragment": true
+        },
+        {
+          "type": "function",
+          "name": "transfer",
+          "constant": false,
+          "inputs": [
+            {
+              "name": "_to",
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            },
+            {
+              "name": "_score",
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "gas": null,
+          "_isFragment": true
+        },
+        {
+          "type": "function",
+          "name": "users",
+          "constant": true,
+          "inputs": [
+            {
+              "name": null,
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            }
+          ],
+          "outputs": [
+            {
+              "name": "userAddress",
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            },
+            {
+              "name": "bestScore",
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            },
+            {
+              "name": "lastScore",
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            },
+            {
+              "name": "totalScore",
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "gas": null,
+          "_isFragment": true
+        }
+      ],
+      "_abiCoder": {
+        "coerceFunc": null
+      },
+      "functions": {
+        "balance()": {
+          "type": "function",
+          "name": "balance",
+          "constant": true,
+          "inputs": [],
+          "outputs": [
+            {
+              "name": null,
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "gas": null,
+          "_isFragment": true
+        },
+        "bonus()": {
+          "type": "function",
+          "name": "bonus",
+          "constant": true,
+          "inputs": [],
+          "outputs": [
+            {
+              "name": null,
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "gas": null,
+          "_isFragment": true
+        },
+        "calcReward(uint256,uint256)": {
+          "type": "function",
+          "name": "calcReward",
+          "constant": true,
+          "inputs": [
+            {
+              "name": "_score",
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            },
+            {
+              "name": "_bonus",
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "outputs": [
+            {
+              "name": null,
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "pure",
+          "gas": null,
+          "_isFragment": true
+        },
+        "deposit()": {
+          "type": "function",
+          "name": "deposit",
+          "constant": false,
+          "inputs": [],
+          "outputs": [],
+          "payable": true,
+          "stateMutability": "payable",
+          "gas": null,
+          "_isFragment": true
+        },
+        "getBestScore(address)": {
+          "type": "function",
+          "name": "getBestScore",
+          "constant": true,
+          "inputs": [
+            {
+              "name": "_user",
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            }
+          ],
+          "outputs": [
+            {
+              "name": null,
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "gas": null,
+          "_isFragment": true
+        },
+        "getLastScore(address)": {
+          "type": "function",
+          "name": "getLastScore",
+          "constant": true,
+          "inputs": [
+            {
+              "name": "_user",
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            }
+          ],
+          "outputs": [
+            {
+              "name": null,
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "gas": null,
+          "_isFragment": true
+        },
+        "getTokenBalance()": {
+          "type": "function",
+          "name": "getTokenBalance",
+          "constant": true,
+          "inputs": [],
+          "outputs": [
+            {
+              "name": null,
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "gas": null,
+          "_isFragment": true
+        },
+        "getTotalScore(address)": {
+          "type": "function",
+          "name": "getTotalScore",
+          "constant": true,
+          "inputs": [
+            {
+              "name": "_user",
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            }
+          ],
+          "outputs": [
+            {
+              "name": null,
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "gas": null,
+          "_isFragment": true
+        },
+        "owner()": {
+          "type": "function",
+          "name": "owner",
+          "constant": true,
+          "inputs": [],
+          "outputs": [
+            {
+              "name": null,
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "gas": null,
+          "_isFragment": true
+        },
+        "setBonus(uint256)": {
+          "type": "function",
+          "name": "setBonus",
+          "constant": false,
+          "inputs": [
+            {
+              "name": "_bonus",
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "gas": null,
+          "_isFragment": true
+        },
+        "setOwner(address)": {
+          "type": "function",
+          "name": "setOwner",
+          "constant": false,
+          "inputs": [
+            {
+              "name": "_owner",
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            }
+          ],
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "gas": null,
+          "_isFragment": true
+        },
+        "setToken(address)": {
+          "type": "function",
+          "name": "setToken",
+          "constant": false,
+          "inputs": [
+            {
+              "name": "_token",
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            }
+          ],
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "gas": null,
+          "_isFragment": true
+        },
+        "token()": {
+          "type": "function",
+          "name": "token",
+          "constant": true,
+          "inputs": [],
+          "outputs": [
+            {
+              "name": null,
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "gas": null,
+          "_isFragment": true
+        },
+        "transfer(address,uint256)": {
+          "type": "function",
+          "name": "transfer",
+          "constant": false,
+          "inputs": [
+            {
+              "name": "_to",
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            },
+            {
+              "name": "_score",
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "gas": null,
+          "_isFragment": true
+        },
+        "users(address)": {
+          "type": "function",
+          "name": "users",
+          "constant": true,
+          "inputs": [
+            {
+              "name": null,
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            }
+          ],
+          "outputs": [
+            {
+              "name": "userAddress",
+              "type": "address",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            },
+            {
+              "name": "bestScore",
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            },
+            {
+              "name": "lastScore",
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            },
+            {
+              "name": "totalScore",
+              "type": "uint256",
+              "indexed": null,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "gas": null,
+          "_isFragment": true
+        }
+      },
+      "errors": {},
+      "events": {
+        "RewardSend(address,uint256)": {
+          "name": "RewardSend",
+          "anonymous": false,
+          "inputs": [
+            {
+              "name": "_to",
+              "type": "address",
+              "indexed": true,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "address",
+              "_isParamType": true
+            },
+            {
+              "name": "_amount",
+              "type": "uint256",
+              "indexed": false,
+              "components": null,
+              "arrayLength": null,
+              "arrayChildren": null,
+              "baseType": "uint256",
+              "_isParamType": true
+            }
+          ],
+          "type": "event",
+          "_isFragment": true
+        }
+      },
+      "structs": {},
+      "deploy": {
+        "name": null,
+        "type": "constructor",
+        "inputs": [
+          {
+            "name": "_token",
+            "type": "address",
+            "indexed": null,
+            "components": null,
+            "arrayLength": null,
+            "arrayChildren": null,
+            "baseType": "address",
+            "_isParamType": true
+          },
+          {
+            "name": "_owner",
+            "type": "address",
+            "indexed": null,
+            "components": null,
+            "arrayLength": null,
+            "arrayChildren": null,
+            "baseType": "address",
+            "_isParamType": true
+          },
+          {
+            "name": "_bonus",
+            "type": "uint256",
+            "indexed": null,
+            "components": null,
+            "arrayLength": null,
+            "arrayChildren": null,
+            "baseType": "uint256",
+            "_isParamType": true
+          }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "gas": null,
+        "_isFragment": true
+      },
+      "_isInterface": true
+    }
+  }
+}
